@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: hoanganh
-  Date: 07/05/2024
-  Time: 16:54
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <!DOCTYPE html>
@@ -34,7 +28,7 @@
 <div class="wrapper">
     <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-            <a class="sidebar-brand" href="index.html">
+            <a class="sidebar-brand" href="index.jsp">
                 <span class="align-middle">AdminKit</span>
             </a>
 
@@ -43,7 +37,7 @@
                     Pages
                 </li>
                 <li class="sidebar-item ">
-                    <a class="sidebar-link" href="index.html">
+                    <a class="sidebar-link" href="index.jsp">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Dashboard</span>
                     </a>
                 </li>
@@ -53,12 +47,12 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="product.html">
+                    <a class="sidebar-link" href="product.jsp">
                         <i class="align-middle" data-feather="square"></i> <span class="align-middle">Product</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="user.html">
+                    <a class="sidebar-link" href="user.jsp">
                         <i class="align-middle" data-feather="user"></i> <span class="align-middle">User</span>
                     </a>
                 </li>
@@ -236,7 +230,7 @@
                             <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i>
                                 Analytics</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="index.html"><i class="align-middle me-1"
+                            <a class="dropdown-item" href="index.jsp"><i class="align-middle me-1"
                                                                           data-feather="settings"></i> Settings &
                                 Privacy</a>
                             <a class="dropdown-item" href="#"><i class="align-middle me-1"
