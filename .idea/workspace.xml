@@ -10,6 +10,14 @@
       <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/controller/CategoryServelet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/controller/ProductSeverlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/dao/DaoCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/dao/DaoProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/dao/ICategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/until/ConnectDB.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
@@ -23,15 +31,14 @@
       <change afterPath="$PROJECT_DIR$/../src/main/webapp/add.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/main/webapp/edit.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/category.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Severlet" />
         <option value="Class" />
       </list>
     </option>
@@ -87,35 +96,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build MiniProject.executor": "Run",
-    "JavaScript Debug.category.jsp.executor": "Run",
-    "JavaScript Debug.user.jsp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 9.0.88.executor": "Run",
-    "Tomcat Server.category.jsp.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/hoanganh/academy/MiniProject/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build MiniProject.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MiniProject [:DaoCategory.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MiniProject [:DaoProduct.main()].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.category.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.user.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.88.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.category.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hoanganh/academy/MiniProject/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora_aws",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora_aws&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -125,6 +136,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.88">
+    <configuration name="DaoCategory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rikkei.miniproject.dao.DaoCategory" />
+      <module name="MiniProject.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rikkei.miniproject.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rikkei.miniproject.dao.DaoProduct" />
+      <module name="MiniProject.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rikkei.miniproject.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="category.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Gradle___rikkei___MiniProject_1_0_SNAPSHOT_war/category.jsp">
       <method v="2" />
     </configuration>
@@ -132,10 +169,11 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.88" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.88" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="Gradle : rikkei : MiniProject-1.0-SNAPSHOT.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/Gradle___rikkei___MiniProject_1_0_SNAPSHOT_war" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -147,6 +185,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63428" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -208,8 +294,18 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DaoCategory" />
+      <item itemvalue="Application.DaoProduct" />
+      <item itemvalue="JavaScript Debug.category.jsp" />
+      <item itemvalue="JavaScript Debug.user.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.88" />
+      <item itemvalue="Tomcat Server.category.jsp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DaoProduct" />
+        <item itemvalue="Application.DaoCategory" />
         <item itemvalue="JavaScript Debug.category.jsp" />
         <item itemvalue="JavaScript Debug.user.jsp" />
         <item itemvalue="Tomcat Server.category.jsp" />
@@ -239,24 +335,44 @@
       <workItem from="1715075721260" duration="111000" />
       <workItem from="1715076037814" duration="4292000" />
       <workItem from="1715080377513" duration="3043000" />
+      <workItem from="1715142624805" duration="3813000" />
+      <workItem from="1715151654833" duration="5524000" />
+      <workItem from="1715163050037" duration="33000" />
+      <workItem from="1715174727441" duration="12851000" />
+      <workItem from="1715216458775" duration="781000" />
+      <workItem from="1715221984301" duration="52000" />
+      <workItem from="1715222052734" duration="466000" />
+      <workItem from="1715223413443" duration="407000" />
+      <workItem from="1715223897582" duration="6443000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Category.java</url>
-          <line>8</line>
+          <line>16</line>
           <properties field="Descripttion" class="rikkei.miniproject.model.entity.Category" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/rikkei/miniproject/model/entity/Category.java</url>
-          <line>7</line>
+          <line>15</line>
           <properties field="Name" class="rikkei.miniproject.model.entity.Category" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>

@@ -1,5 +1,8 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -281,7 +284,20 @@
                             </tr>
                             </thead>
                             <tbody id="products">
-
+                            <c:forEach items="${ListProduct}" var="prd">
+                                <tr
+                                    <td>${prd.getProduct_ID()}</td>
+                                    <td>${prd.getName()}</td>
+                                    <td>${prd.getImage()}</td>
+                                    <td>${prd.getDescription()}</td>
+                                    <td><fmt:formatDate value="${prd.getCreated_date()}" pattern="dd/MM/yyyy" /></td>
+                                    <td>${prd.getPrice()}</td>
+                                    <td>${prd.getStatus()}</td>
+                                    <td>${prd.getCategory()}</td>
+                                    <td><a>edit</a></td>
+                                    <td><a>delete</a></td>
+                                </tr>
+                            </c:forEach>
 
                             </tbody>
 

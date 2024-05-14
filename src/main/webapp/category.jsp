@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
@@ -10,15 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
     <meta name="author" content="AdminKit">
-    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+    <meta name="keywords"
+          content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png"/>
 
-    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+    <link rel="canonical" href="https://demo-basic.adminkit.io/"/>
 
     <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -231,7 +234,7 @@
                                 Analytics</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="index.jsp"><i class="align-middle me-1"
-                                                                          data-feather="settings"></i> Settings &
+                                                                         data-feather="settings"></i> Settings &
                                 Privacy</a>
                             <a class="dropdown-item" href="#"><i class="align-middle me-1"
                                                                  data-feather="help-circle"></i> Help Center</a>
@@ -251,10 +254,13 @@
                         <nav class="navbar navbar-expand-lg bg-light">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#">
-                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">+ Add new Category</button>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#addModal">+ Add new Category
+                                    </button>
                                 </a>
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2 fst-italic" type="search" placeholder="Enter category's name... "
+                                    <input class="form-control me-2 fst-italic" type="search"
+                                           placeholder="Enter category's name... "
                                            aria-label="Search">
                                     <button class="btn btn-outline-success" type="submit">Search</button>
                                 </form>
@@ -274,146 +280,18 @@
                             </tr>
                             </thead>
                             <tbody id="categories">
-                            <!-- <tr>
-                                <td>1</td>
-                                <td>Category 1</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr> -->
-                            <!-- <tr>
-                                <td>2</td>
-                                <td>Category 2</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Category 3</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Category 4</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Category 5</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Category 6</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Category 7</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Category 8</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>Category 9</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Category 10</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                </td>
-                                <td>28/10/2022</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Edit</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </td>
-                            </tr> -->
+                            <c:forEach items="${Listcategory}" var="ctg">
+                                <tr>
+                                    <td>${ctg.getCategory_ID()}</td>
+                                    <td>${ctg.getName()}</td>
+                                    <td>${ctg.getDescripttion()}</td>
+                                    <td>${ctg.getCreated_Date()}</td>
+                                    <td><a>edit</a></td>
+                                    <td><a>delete</a></td>
+                                </tr>
+                            </c:forEach>
+
+
                             </tbody>
 
                         </table>
@@ -491,7 +369,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewCategory()">ADD</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewCategory()">ADD
+                </button>
             </div>
         </div>
     </div>
@@ -526,7 +405,9 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="updateCategory()">UPDATE</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="updateCategory()">
+                    UPDATE
+                </button>
             </div>
         </div>
     </div>

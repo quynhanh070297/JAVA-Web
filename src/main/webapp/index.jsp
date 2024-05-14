@@ -43,12 +43,12 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="category.jsp">
+                    <a class="sidebar-link" href="/CategoryServelet?action=categoryPage">
                         <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Category</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="product.jsp">
+                    <a class="sidebar-link" href="/ProductSeverlet?action=productPage">
                         <i class="align-middle" data-feather="square"></i> <span class="align-middle">Product</span>
                     </a>
                 </li>
